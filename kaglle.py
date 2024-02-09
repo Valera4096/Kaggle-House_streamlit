@@ -40,7 +40,7 @@ st.title('Предсказанние цены на дом')
 
 st.header('Заполните данные')
 
-GrLivArea = st.number_input('Above grade (ground) living area square feet / Жилая площадь над уровнем земли в квадратных футах')
+GrLivArea = st.number_input('Above grade (ground) living area square feet / Жилая площадь  в квадратных футах')
 
 GarageType = st.selectbox(
     'Garage location / расположение гаража ?',
@@ -206,8 +206,6 @@ if on:
     PavedDrive = 'Y' if PavedDrive == 'Yes' else 'N'
     res_df['PavedDrive'] = PavedDrive
     
-    ScreenPorch = st.number_input('Screen porch area in square feet / Площадь веранды  ?')
-    res_df['ScreenPorch'] = ScreenPorch
     
     PoolArea = st.number_input('Pool area in square feet / Площадь бассейна  ?')
     res_df['PoolArea'] = PoolArea
